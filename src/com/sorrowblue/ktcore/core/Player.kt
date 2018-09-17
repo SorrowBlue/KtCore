@@ -2,6 +2,7 @@ package com.sorrowblue.ktcore.core
 
 import com.sorrowblue.ktcore.peripheral.Coords
 import com.sorrowblue.ktcore.peripheral.Items
+import com.sorrowblue.ktcore.state.*
 
 external object Player {
 
@@ -84,32 +85,143 @@ external object Player {
 	 * プレーヤーの3Dアクセラレーションを返します。
 	 */
 	fun getVelocity(): Coords
-	fun addVelocity(velx、vely、velz) - プレーヤーに3次元の加速度velx、vely、velzを追加します。
-	fun experience() - プレイヤーの経験状態を返します。
-	fun getExperience() - プレイヤーの経験を返します。
-	fun setExperience(exp) - プレーヤーにexp期限を設定します。
-	fun addExperience(exp) - プレイヤーに経験を追加します。
-	fun level() - プレーヤーのレベルのステータスを返します。
-	fun getLevel() - プレーヤーのレベルを返します。
-	fun setLevel(lvl) - プレーヤーにlvlレベルを設定します。
-	fun addLevel(lvl) - プレーヤーにレベルを追加します。
-	fun flying() - プレーヤーのフライト状況を返します。
-	fun getFlyingEnabled() - プレーヤーが飛行できるかどうかを調べます。
-	fun setFlyingEnabled(fly？) - プレーヤーの飛行能力を設定します。
-	fun getFlying() - プレーヤーが飛んでいるかどうかを調べます。
-	fun setFlying(fly？) - プレーヤーのフライト状況を設定します。
-	fun exhaustion() - プレーヤーの疲労状態を返します。
-	fun getExhaustion() - プレーヤーの疲労を返します。
-	fun setExhaustion(exh) - プレイヤーのexh欠乏単位を設定します。
-	fun hunger() - プレーヤーの飽和状態を返します。
-	fun getHunger() - プレーヤーの満腹感を返します。
-	fun setHunger(hnr) - プレーヤーの飽食単位のhnrを指定します。
-	fun saturation() - プレーヤーの彩度状態を返します。
-	fun getSaturation() - プレーヤーの彩度を返します。
-	fun setSaturation(sat) - sat飽和単位をプレーヤーに設定します。
-	fun health() - プレーヤーの健康状態を返します。
-	fun getHealth() - プレーヤーの健康状態を返します。
-	fun setHealth(hp) - ヘルスの単位をプレイヤーに設定します。
-	fun score() - プレーヤーのアカウントのステータスを返します。
-	fun getScore() - プレーヤーのスコアを返します。
+
+	/**
+	 * プレーヤーに3次元の加速度vecX、vexY、vecZを追加します。
+	 */
+	fun addVelocity(vecX: Double, vecY: Double, vecZ: Double)
+
+	/**
+	 * プレイヤーの経験状態を返します。
+	 */
+	fun experience(): Exception
+
+	/**
+	 * プレイヤーの経験を返します。
+	 */
+	fun getExperience(): Double
+
+	/**
+	 * プレーヤーにexp期限を設定します。
+	 */
+	fun setExperience(exp: Double)
+
+	/**
+	 * プレイヤーに経験を追加します。
+	 */
+	fun addExperience(exp: Double)
+
+	/**
+	 * プレーヤーのレベルのステータスを返します。
+	 */
+	fun level(): Level
+
+	/**
+	 * プレーヤーのレベルを返します。
+	 */
+	fun getLevel(): Int
+
+	/**
+	 * プレーヤーにlvlレベルを設定します。
+	 */
+	fun setLevel(lv: Int)
+
+	/**
+	 * プレーヤーにレベルを追加します。
+	 */
+	fun addLevel(lv: Int)
+
+	/**
+	 * プレーヤーのフライト状況を返します。
+	 */
+	fun flying(): Flying
+
+	/**
+	 * プレーヤーが飛行できるかどうかを調べます。
+	 */
+	fun getFlyingEnabled(): Boolean
+
+	/**
+	 * プレーヤーの飛行能力を設定します。
+	 */
+	fun setFlyingEnabled(fly: Boolean)
+
+	/**
+	 * プレーヤーが飛んでいるかどうかを調べます。
+	 */
+	fun getFlying(): Boolean
+
+	/**
+	 * プレーヤーのフライト状況を設定します。
+	 */
+	fun setFlying(fly: Boolean)
+
+	/**
+	 * プレーヤーの疲労状態を返します。
+	 */
+	fun exhaustion(): Exhaustion
+
+	/**
+	 * プレーヤーの疲労を返します。
+	 */
+	fun getExhaustion(): Double
+
+	/**
+	 * プレイヤーのexh欠乏単位を設定します。
+	 */
+	fun setExhaustion(exh: Double)
+
+	/**
+	 * プレーヤーの飽和状態を返します。
+	 */
+	fun hunger(): Hunger
+
+	/**
+	 * プレーヤーの満腹感を返します。
+	 */
+	fun getHunger(): Int
+
+	/**
+	 * プレーヤーの飽食単位のhnrを指定します。
+	 */
+	fun setHunger(hnr: Int)
+
+	/**
+	 * プレーヤーの彩度状態を返します。
+	 */
+	fun saturation(): Saturation
+
+	/**
+	 * プレーヤーの彩度を返します。
+	 */
+	fun getSaturation(): Int
+
+	/**
+	 * sat飽和単位をプレーヤーに設定します。
+	 */
+	fun setSaturation(sat: Int)
+
+	/**
+	 * プレーヤーの健康状態を返します。
+	 */
+	fun health(): Health
+
+	/**
+	 * プレーヤーの健康状態を返します。
+	 */
+	fun getHealth(): Int
+
+	/**
+	 * ヘルスの単位をプレイヤーに設定します。
+	 */
+	fun setHealth(hp: Int)
+
+	/**
+	 * プレーヤーのアカウントのステータスを返します。
+	 */
+	fun score()
+	/**
+	 *  プレーヤーのスコアを返します。
+	 */
+	fun getScore()
 }
