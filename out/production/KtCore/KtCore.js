@@ -3,110 +3,227 @@ if (typeof kotlin === 'undefined') {
 }
 var KtCore = function (_, Kotlin) {
   'use strict';
-  var Kind_INTERFACE = Kotlin.Kind.INTERFACE;
   var Kind_CLASS = Kotlin.Kind.CLASS;
+  var Kind_INTERFACE = Kotlin.Kind.INTERFACE;
   var Kind_OBJECT = Kotlin.Kind.OBJECT;
+  function Mob(uuid) {
+    this.uuid = uuid;
+  }
+  Mob.$metadata$ = {
+    kind: Kind_CLASS,
+    simpleName: 'Mob',
+    interfaces: []
+  };
   var support_version;
   function Coords() {
   }
-  function Coords$Relative() {
-  }
-  Coords$Relative.$metadata$ = {
-    kind: Kind_INTERFACE,
-    simpleName: 'Relative',
-    interfaces: []
-  };
-  function Coords$Vec() {
-  }
-  Coords$Vec.$metadata$ = {
-    kind: Kind_INTERFACE,
-    simpleName: 'Vec',
-    interfaces: []
-  };
   Coords.$metadata$ = {
     kind: Kind_INTERFACE,
     simpleName: 'Coords',
     interfaces: []
   };
-  function SimpleCoords() {
-  }
-  Object.defineProperty(SimpleCoords.prototype, 'relative', {
-    get: function () {
-      return null;
-    }
-  });
-  Object.defineProperty(SimpleCoords.prototype, 'vec', {
-    get: function () {
-      return null;
-    }
-  });
-  SimpleCoords.$metadata$ = {
-    kind: Kind_INTERFACE,
-    simpleName: 'SimpleCoords',
-    interfaces: [Coords]
-  };
-  function mutableCoordsOf$ObjectLiteral(closure$x, closure$y, closure$z) {
-    this.x_n5qta3$_0 = closure$x;
-    this.y_n5qt98$_0 = closure$y;
-    this.z_n5qt8d$_0 = closure$z;
-  }
-  Object.defineProperty(mutableCoordsOf$ObjectLiteral.prototype, 'x', {
-    get: function () {
-      return this.x_n5qta3$_0;
-    },
-    set: function (x) {
-      this.x_n5qta3$_0 = x;
-    }
-  });
-  Object.defineProperty(mutableCoordsOf$ObjectLiteral.prototype, 'y', {
-    get: function () {
-      return this.y_n5qt98$_0;
-    },
-    set: function (y) {
-      this.y_n5qt98$_0 = y;
-    }
-  });
-  Object.defineProperty(mutableCoordsOf$ObjectLiteral.prototype, 'z', {
-    get: function () {
-      return this.z_n5qt8d$_0;
-    },
-    set: function (z) {
-      this.z_n5qt8d$_0 = z;
-    }
-  });
-  mutableCoordsOf$ObjectLiteral.$metadata$ = {
-    kind: Kind_CLASS,
-    interfaces: [SimpleCoords]
-  };
-  function mutableCoordsOf(x, y, z) {
-    return new mutableCoordsOf$ObjectLiteral(x, y, z);
-  }
   function coordsOf$ObjectLiteral(closure$x, closure$y, closure$z) {
-    this.x_ahg4l9$_0 = closure$x;
-    this.y_ahg4m4$_0 = closure$y;
-    this.z_ahg4mz$_0 = closure$z;
+    this.x_ftjx1y$_0 = closure$x;
+    this.y_ftjx2t$_0 = closure$y;
+    this.z_ftjx3o$_0 = closure$z;
   }
   Object.defineProperty(coordsOf$ObjectLiteral.prototype, 'x', {
     get: function () {
-      return this.x_ahg4l9$_0;
+      return this.x_ftjx1y$_0;
     }
   });
   Object.defineProperty(coordsOf$ObjectLiteral.prototype, 'y', {
     get: function () {
-      return this.y_ahg4m4$_0;
+      return this.y_ftjx2t$_0;
     }
   });
   Object.defineProperty(coordsOf$ObjectLiteral.prototype, 'z', {
     get: function () {
-      return this.z_ahg4mz$_0;
+      return this.z_ftjx3o$_0;
     }
   });
   coordsOf$ObjectLiteral.$metadata$ = {
     kind: Kind_CLASS,
-    interfaces: [SimpleCoords]
+    interfaces: [Coords]
   };
   function coordsOf(x, y, z) {
     return new coordsOf$ObjectLiteral(x, y, z);
+  }
+  function mutableCoordsOf$ObjectLiteral(closure$x, closure$y, closure$z) {
+    this.x_7jwkvo$_0 = closure$x;
+    this.y_7jwkut$_0 = closure$y;
+    this.z_7jwkty$_0 = closure$z;
+  }
+  Object.defineProperty(mutableCoordsOf$ObjectLiteral.prototype, 'x', {
+    get: function () {
+      return this.x_7jwkvo$_0;
+    },
+    set: function (x) {
+      this.x_7jwkvo$_0 = x;
+    }
+  });
+  Object.defineProperty(mutableCoordsOf$ObjectLiteral.prototype, 'y', {
+    get: function () {
+      return this.y_7jwkut$_0;
+    },
+    set: function (y) {
+      this.y_7jwkut$_0 = y;
+    }
+  });
+  Object.defineProperty(mutableCoordsOf$ObjectLiteral.prototype, 'z', {
+    get: function () {
+      return this.z_7jwkty$_0;
+    },
+    set: function (z) {
+      this.z_7jwkty$_0 = z;
+    }
+  });
+  mutableCoordsOf$ObjectLiteral.$metadata$ = {
+    kind: Kind_CLASS,
+    interfaces: [Coords]
+  };
+  function mutableCoordsOf(x, y, z) {
+    return new mutableCoordsOf$ObjectLiteral(x, y, z);
+  }
+  function Relative() {
+  }
+  Relative.$metadata$ = {
+    kind: Kind_INTERFACE,
+    simpleName: 'Relative',
+    interfaces: [Coords]
+  };
+  function relativeOf$ObjectLiteral(closure$x, closure$y, closure$z) {
+    this.x_ydz0ec$_0 = closure$x;
+    this.y_ydz0f7$_0 = closure$y;
+    this.z_ydz0g2$_0 = closure$z;
+  }
+  Object.defineProperty(relativeOf$ObjectLiteral.prototype, 'x', {
+    get: function () {
+      return this.x_ydz0ec$_0;
+    }
+  });
+  Object.defineProperty(relativeOf$ObjectLiteral.prototype, 'y', {
+    get: function () {
+      return this.y_ydz0f7$_0;
+    }
+  });
+  Object.defineProperty(relativeOf$ObjectLiteral.prototype, 'z', {
+    get: function () {
+      return this.z_ydz0g2$_0;
+    }
+  });
+  relativeOf$ObjectLiteral.$metadata$ = {
+    kind: Kind_CLASS,
+    interfaces: [Relative]
+  };
+  function relativeOf(x, y, z) {
+    return new relativeOf$ObjectLiteral(x, y, z);
+  }
+  function mutableRelativeOf$ObjectLiteral(closure$x, closure$y, closure$z) {
+    this.x_hw5md6$_0 = closure$x;
+    this.y_hw5me1$_0 = closure$y;
+    this.z_hw5mew$_0 = closure$z;
+  }
+  Object.defineProperty(mutableRelativeOf$ObjectLiteral.prototype, 'x', {
+    get: function () {
+      return this.x_hw5md6$_0;
+    },
+    set: function (x) {
+      this.x_hw5md6$_0 = x;
+    }
+  });
+  Object.defineProperty(mutableRelativeOf$ObjectLiteral.prototype, 'y', {
+    get: function () {
+      return this.y_hw5me1$_0;
+    },
+    set: function (y) {
+      this.y_hw5me1$_0 = y;
+    }
+  });
+  Object.defineProperty(mutableRelativeOf$ObjectLiteral.prototype, 'z', {
+    get: function () {
+      return this.z_hw5mew$_0;
+    },
+    set: function (z) {
+      this.z_hw5mew$_0 = z;
+    }
+  });
+  mutableRelativeOf$ObjectLiteral.$metadata$ = {
+    kind: Kind_CLASS,
+    interfaces: [Relative]
+  };
+  function mutableRelativeOf(x, y, z) {
+    return new mutableRelativeOf$ObjectLiteral(x, y, z);
+  }
+  function Vec() {
+  }
+  Vec.$metadata$ = {
+    kind: Kind_INTERFACE,
+    simpleName: 'Vec',
+    interfaces: []
+  };
+  function vecOf$ObjectLiteral(closure$x, closure$y, closure$z) {
+    this.x_720u10$_0 = closure$x;
+    this.y_720u05$_0 = closure$y;
+    this.z_720tza$_0 = closure$z;
+  }
+  Object.defineProperty(vecOf$ObjectLiteral.prototype, 'x', {
+    get: function () {
+      return this.x_720u10$_0;
+    }
+  });
+  Object.defineProperty(vecOf$ObjectLiteral.prototype, 'y', {
+    get: function () {
+      return this.y_720u05$_0;
+    }
+  });
+  Object.defineProperty(vecOf$ObjectLiteral.prototype, 'z', {
+    get: function () {
+      return this.z_720tza$_0;
+    }
+  });
+  vecOf$ObjectLiteral.$metadata$ = {
+    kind: Kind_CLASS,
+    interfaces: [Vec]
+  };
+  function vecOf(x, y, z) {
+    return new vecOf$ObjectLiteral(x, y, z);
+  }
+  function mutableVecOf$ObjectLiteral(closure$x, closure$y, closure$z) {
+    this.x_mqvxja$_0 = closure$x;
+    this.y_mqvxk5$_0 = closure$y;
+    this.z_mqvxl0$_0 = closure$z;
+  }
+  Object.defineProperty(mutableVecOf$ObjectLiteral.prototype, 'x', {
+    get: function () {
+      return this.x_mqvxja$_0;
+    },
+    set: function (x) {
+      this.x_mqvxja$_0 = x;
+    }
+  });
+  Object.defineProperty(mutableVecOf$ObjectLiteral.prototype, 'y', {
+    get: function () {
+      return this.y_mqvxk5$_0;
+    },
+    set: function (y) {
+      this.y_mqvxk5$_0 = y;
+    }
+  });
+  Object.defineProperty(mutableVecOf$ObjectLiteral.prototype, 'z', {
+    get: function () {
+      return this.z_mqvxl0$_0;
+    },
+    set: function (z) {
+      this.z_mqvxl0$_0 = z;
+    }
+  });
+  mutableVecOf$ObjectLiteral.$metadata$ = {
+    kind: Kind_CLASS,
+    interfaces: [Vec]
+  };
+  function mutableVecOf(x, y, z) {
+    return new mutableVecOf$ObjectLiteral(x, y, z);
   }
   function Entitys() {
     Entitys$Companion_getInstance();
@@ -167,18 +284,24 @@ var KtCore = function (_, Kotlin) {
   var package$com = _.com || (_.com = {});
   var package$sorrowblue = package$com.sorrowblue || (package$com.sorrowblue = {});
   var package$ktcore = package$sorrowblue.ktcore || (package$sorrowblue.ktcore = {});
+  var package$helper = package$ktcore.helper || (package$ktcore.helper = {});
+  package$helper.Mob = Mob;
   Object.defineProperty(package$ktcore, 'support_version', {
     get: function () {
       return support_version;
     }
   });
-  Coords.Relative = Coords$Relative;
-  Coords.Vec = Coords$Vec;
   var package$peripheral = package$ktcore.peripheral || (package$ktcore.peripheral = {});
-  package$peripheral.Coords = Coords;
-  package$peripheral.SimpleCoords = SimpleCoords;
-  package$peripheral.mutableCoordsOf_qt1dr2$ = mutableCoordsOf;
-  package$peripheral.coordsOf_qt1dr2$ = coordsOf;
+  var package$coord = package$peripheral.coord || (package$peripheral.coord = {});
+  package$coord.Coords = Coords;
+  package$coord.coordsOf_qt1dr2$ = coordsOf;
+  package$coord.mutableCoordsOf_qt1dr2$ = mutableCoordsOf;
+  package$coord.Relative = Relative;
+  package$coord.relativeOf_qt1dr2$ = relativeOf;
+  package$coord.mutableRelativeOf_qt1dr2$ = mutableRelativeOf;
+  package$coord.Vec = Vec;
+  package$coord.vecOf_yvo9jy$ = vecOf;
+  package$coord.mutableVecOf_yvo9jy$ = mutableVecOf;
   Object.defineProperty(Entitys, 'Companion', {
     get: Entitys$Companion_getInstance
   });
@@ -188,10 +311,6 @@ var KtCore = function (_, Kotlin) {
     get: Players$Companion_getInstance
   });
   package$peripheral.Players = Players;
-  Object.defineProperty(mutableCoordsOf$ObjectLiteral.prototype, 'relative', Object.getOwnPropertyDescriptor(SimpleCoords.prototype, 'relative'));
-  Object.defineProperty(mutableCoordsOf$ObjectLiteral.prototype, 'vec', Object.getOwnPropertyDescriptor(SimpleCoords.prototype, 'vec'));
-  Object.defineProperty(coordsOf$ObjectLiteral.prototype, 'relative', Object.getOwnPropertyDescriptor(SimpleCoords.prototype, 'relative'));
-  Object.defineProperty(coordsOf$ObjectLiteral.prototype, 'vec', Object.getOwnPropertyDescriptor(SimpleCoords.prototype, 'vec'));
   support_version = '1.1.2.42 beta';
   Kotlin.defineModule('KtCore', _);
   return _;
