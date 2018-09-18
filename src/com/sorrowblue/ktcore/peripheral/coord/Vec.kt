@@ -1,9 +1,9 @@
 package com.sorrowblue.ktcore.peripheral.coord
 
 interface Vec {
-	override val x: Double = x
-	override val y: Double = y
-	override val z: Double = z
+	val x: Double
+	val y: Double
+	val z: Double
 }
 
 fun vecOf(x: Double, y: Double, z: Double) = object : Vec {

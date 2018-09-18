@@ -1,6 +1,6 @@
 package com.sorrowblue.ktcore.peripheral.coord
 
-interface Relative : Coords {}
+interface Relative : Coords
 
 fun relativeOf(x: Int, y: Int, z: Int) = object : Relative {
 	override val x = x

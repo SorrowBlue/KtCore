@@ -1,7 +1,7 @@
 package com.sorrowblue.ktcore.core
 
-import com.sorrowblue.ktcore.peripheral.Coords
 import com.sorrowblue.ktcore.peripheral.Items
+import com.sorrowblue.ktcore.peripheral.coord.Coords
 import com.sorrowblue.ktcore.state.*
 
 external object Player {
@@ -9,7 +9,7 @@ external object Player {
 	/**
 	 * アイテムをプレイヤーのインベントリに追加します。
 	 */
-	fun addItemToInventory(nameID: String, count: Int)
+	fun addItemToInventory(id: Int, count: Int, data: Int)
 
 	/**
 	 * Entityモジュールを使用してプレーヤを操作するエンティティとしてプレーヤを返します。
@@ -220,6 +220,7 @@ external object Player {
 	 * プレーヤーのアカウントのステータスを返します。
 	 */
 	fun score()
+
 	/**
 	 *  プレーヤーのスコアを返します。
 	 */

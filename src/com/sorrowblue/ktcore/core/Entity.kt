@@ -1,7 +1,7 @@
 package com.sorrowblue.ktcore.core
 
-import com.sorrowblue.ktcore.peripheral.Coords
-import com.sorrowblue.ktcore.peripheral.SimpleCoords
+import com.sorrowblue.ktcore.peripheral.coord.Coords
+import com.sorrowblue.ktcore.peripheral.coord.Vec
 
 external object Entity {
 	/**
@@ -207,7 +207,7 @@ external object Entity {
 	/**
 	 * Modの座標を取得する
 	 */
-	fun getPosition(entity: Long): SimpleCoords
+	fun getPosition(entity: Long): Coords
 
 	/**
 	 * 比較的座標X,Y,ZにエッセンスMOBを移動させます。
@@ -222,7 +222,7 @@ external object Entity {
 	/**
 	 * mobエンティティの3Dアクセラレーションを返します。
 	 */
-	fun getVelocity(entity: Long): Coords.Vec
+	fun getVelocity(entity: Long): Vec
 
 	/**
 	 * 3次元の加速度velx,vely,velzエンティティmobを追加します。
@@ -232,12 +232,12 @@ external object Entity {
 	/**
 	 * 座標1と座標2の座標間の距離を返します。
 	 */
-	fun getDistanceBetweenCoords(coords1: SimpleCoords, coords2: SimpleCoords): Double
+	fun getDistanceBetweenCoords(coords1: Coords, coords2: Coords): Double
 
 	/**
 	 * mobエンティティからcoordsオブジェクト内の座標までの距離を返します。
 	 */
-	fun getDistanceToCoords(entity: Long, coords: SimpleCoords): Double
+	fun getDistanceToCoords(entity: Long, coords: Coords): Double
 
 	/**
 	 * エンティティmob1とmob2の間の距離を返します。
@@ -256,12 +256,12 @@ external object Entity {
 	/**
 	 * mobエンティティのビューベクトルを返します。
 	 */
-	fun getLookVector(entity: Long): Coords.Vec
+	fun getLookVector(entity: Long): Vec
 
 	/**
 	 * mobエンティティのビューベクトルを返します。
 	 */
-	fun getLookAt(entity: Long, x: Int, y: Int, z: Int): Coords.Vec
+	fun getLookAt(entity: Long, x: Int, y: Int, z: Int): Vec
 
 	/**
 	 * エンティティを座標の方向に向かせます
@@ -286,7 +286,7 @@ external object Entity {
 	/**
 	 * mobの動きベクトルを返します。
 	 */
-	fun getMovingVector(entity: Long): Coords.Vec
+	fun getMovingVector(entity: Long): Vec
 
 	/**
 	 * mob mobの角度を返します。
@@ -300,7 +300,7 @@ external object Entity {
 	/**
 	 * 中心座標と半径maxRangeを持つ,球体にタイプタイプのエンティティのJS配列を返します。
 	 */
-	fun getAllInRange(coords: SimpleCoords, maxRange: Int, type: Int): dynamic
+	fun getAllInRange(coords: Coords, maxRange: Int, type: Int): dynamic
 	/**
 	 * mobエンティティのインベントリを返します。
 	 */

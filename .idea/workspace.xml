@@ -2,7 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ed048a51-efbf-4c04-847e-be41005c7062" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/com/sorrowblue/ktcore/helper/Mob.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/sorrowblue/ktcore/core/Player.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/sorrowblue/ktcore/core/Player.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/sorrowblue/ktcore/peripheral/Coords.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/sorrowblue/ktcore/peripheral/coord/Relative.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/sorrowblue/ktcore/peripheral/coord/Relative.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/sorrowblue/ktcore/peripheral/coord/Vec.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/sorrowblue/ktcore/peripheral/coord/Vec.kt" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -59,22 +64,135 @@
     <session id="1227767177">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
+          <entry key="project.closed" value="5" />
           <entry key="project.open.time.0" value="1" />
-          <entry key="project.opened" value="1" />
+          <entry key="project.open.time.3" value="1" />
+          <entry key="project.open.time.4" value="1" />
+          <entry key="project.open.time.5" value="1" />
+          <entry key="project.open.time.8" value="1" />
+          <entry key="project.opened" value="5" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="kt" value="5" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="Kotlin" value="5" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="kt" value="38" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="Kotlin" value="38" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/sorrowblue/ktcore/peripheral/coord/Coords.kt">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/sorrowblue/ktcore/peripheral/coord/Relative.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="2" column="27" selection-start-line="2" selection-start-column="27" selection-end-line="2" selection-end-column="27" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/sorrowblue/ktcore/peripheral/coord/Vec.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="10" column="22" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/sorrowblue/ktcore/core/Player.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="16" column="19" lean-forward="true" selection-start-line="16" selection-start-column="19" selection-end-line="16" selection-end-column="19" />
+              <folding>
+                <element signature="e#36#171#0" expanded="true" />
+                <element signature="n#!!doc;n#get#0;n#!!block;n#Player#0" />
+                <element signature="n#!!doc;n#getNameForEnt#0;n#!!block;n#Player#0" />
+                <element signature="n#!!doc;n#getName#0;n#!!block;n#Player#0" />
+                <element signature="n#!!doc;n#getDimension#0;n#!!block;n#Player#0" />
+                <element signature="n#!!doc;n#isPlayer#0;n#!!block;n#Player#0" />
+                <element signature="n#!!doc;n#getPointed#0;n#!!block;n#Player#0" />
+                <element signature="n#!!doc;n#getInventory#0;n#!!block;n#Player#0" />
+                <element signature="n#!!doc;n#getCarriedItem#0;n#!!block;n#Player#0" />
+                <element signature="n#!!doc;n#setCarriedItem#0;n#!!block;n#Player#0" />
+                <element signature="n#!!doc;n#decreaseCarriedItem#0;n#!!block;n#Player#0" />
+                <element signature="n#!!doc;n#setPosition#0;n#!!block;n#Player#0" />
+                <element signature="n#!!doc;n#getPosition#0;n#!!block;n#Player#0" />
+                <element signature="n#!!doc;n#addPosition#0;n#!!block;n#Player#0" />
+                <element signature="n#!!doc;n#setVelocity#0;n#!!block;n#Player#0" />
+                <element signature="n#!!doc;n#getVelocity#0;n#!!block;n#Player#0" />
+                <element signature="n#!!doc;n#addVelocity#0;n#!!block;n#Player#0" />
+                <element signature="n#!!doc;n#experience#0;n#!!block;n#Player#0" />
+                <element signature="n#!!doc;n#getExperience#0;n#!!block;n#Player#0" />
+                <element signature="n#!!doc;n#setExperience#0;n#!!block;n#Player#0" />
+                <element signature="n#!!doc;n#addExperience#0;n#!!block;n#Player#0" />
+                <element signature="n#!!doc;n#level#0;n#!!block;n#Player#0" />
+                <element signature="n#!!doc;n#getLevel#0;n#!!block;n#Player#0" />
+                <element signature="n#!!doc;n#setLevel#0;n#!!block;n#Player#0" />
+                <element signature="n#!!doc;n#addLevel#0;n#!!block;n#Player#0" />
+                <element signature="n#!!doc;n#flying#0;n#!!block;n#Player#0" />
+                <element signature="n#!!doc;n#getFlyingEnabled#0;n#!!block;n#Player#0" />
+                <element signature="n#!!doc;n#setFlyingEnabled#0;n#!!block;n#Player#0" />
+                <element signature="n#!!doc;n#getFlying#0;n#!!block;n#Player#0" />
+                <element signature="n#!!doc;n#setFlying#0;n#!!block;n#Player#0" />
+                <element signature="n#!!doc;n#exhaustion#0;n#!!block;n#Player#0" />
+                <element signature="n#!!doc;n#getExhaustion#0;n#!!block;n#Player#0" />
+                <element signature="n#!!doc;n#setExhaustion#0;n#!!block;n#Player#0" />
+                <element signature="n#!!doc;n#hunger#0;n#!!block;n#Player#0" />
+                <element signature="n#!!doc;n#getHunger#0;n#!!block;n#Player#0" />
+                <element signature="n#!!doc;n#setHunger#0;n#!!block;n#Player#0" />
+                <element signature="n#!!doc;n#saturation#0;n#!!block;n#Player#0" />
+                <element signature="n#!!doc;n#getSaturation#0;n#!!block;n#Player#0" />
+                <element signature="n#!!doc;n#setSaturation#0;n#!!block;n#Player#0" />
+                <element signature="n#!!doc;n#health#0;n#!!block;n#Player#0" />
+                <element signature="n#!!doc;n#getHealth#0;n#!!block;n#Player#0" />
+                <element signature="n#!!doc;n#setHealth#0;n#!!block;n#Player#0" />
+                <element signature="n#!!doc;n#score#0;n#!!block;n#Player#0" />
+                <element signature="n#!!doc;n#getScore#0;n#!!block;n#Player#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/sorrowblue/ktcore/helper/Mob.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="51">
+              <caret line="3" column="1" lean-forward="true" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Kotlin File" />
         <option value="Kotlin Interface" />
-        <option value="Kotlin Class" />
         <option value="Kotlin Object" />
+        <option value="Kotlin Class" />
       </list>
     </option>
   </component>
@@ -114,13 +232,17 @@
         <option value="$PROJECT_DIR$/src/com/sorrowblue/ktcore/state/Flying.kt" />
         <option value="$PROJECT_DIR$/src/com/sorrowblue/ktcore/state/Saturation.kt" />
         <option value="$PROJECT_DIR$/src/com/sorrowblue/ktcore/state/Hunger.kt" />
-        <option value="$PROJECT_DIR$/src/com/sorrowblue/ktcore/core/Player.kt" />
         <option value="$PROJECT_DIR$/src/com/sorrowblue/ktcore/state/Exhaustion.kt" />
         <option value="$PROJECT_DIR$/src/com/sorrowblue/ktcore/peripheral/Entitys.kt" />
         <option value="$PROJECT_DIR$/src/com/sorrowblue/ktcore/state/Health.kt" />
         <option value="$PROJECT_DIR$/src/com/sorrowblue/ktcore/core/Angle.kt" />
         <option value="$PROJECT_DIR$/src/com/sorrowblue/ktcore/core/Entity.kt" />
         <option value="$PROJECT_DIR$/src/com/sorrowblue/ktcore/peripheral/Players.kt" />
+        <option value="$PROJECT_DIR$/src/com/sorrowblue/ktcore/peripheral/coord/Relative.kt" />
+        <option value="$PROJECT_DIR$/src/com/sorrowblue/ktcore/peripheral/coord/Vec.kt" />
+        <option value="$PROJECT_DIR$/src/com/sorrowblue/ktcore/helper/Mod.kt" />
+        <option value="$PROJECT_DIR$/src/com/sorrowblue/ktcore/helper/Mob.kt" />
+        <option value="$PROJECT_DIR$/src/com/sorrowblue/ktcore/core/Player.kt" />
       </list>
     </option>
   </component>
@@ -131,8 +253,8 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-280" />
-    <option name="y" value="-19" />
+    <option name="x" value="535" />
+    <option name="y" value="-15" />
     <option name="width" value="1936" />
     <option name="height" value="1056" />
   </component>
@@ -142,7 +264,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -154,32 +275,6 @@
               <item name="KtCore" type="b2602c69:ProjectViewProjectNode" />
               <item name="KtCore" type="462c0819:PsiDirectoryNode" />
               <item name=".idea" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="KtCore" type="b2602c69:ProjectViewProjectNode" />
-              <item name="KtCore" type="462c0819:PsiDirectoryNode" />
-              <item name="out" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="KtCore" type="b2602c69:ProjectViewProjectNode" />
-              <item name="KtCore" type="462c0819:PsiDirectoryNode" />
-              <item name="out" type="462c0819:PsiDirectoryNode" />
-              <item name="production" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="KtCore" type="b2602c69:ProjectViewProjectNode" />
-              <item name="KtCore" type="462c0819:PsiDirectoryNode" />
-              <item name="out" type="462c0819:PsiDirectoryNode" />
-              <item name="production" type="462c0819:PsiDirectoryNode" />
-              <item name="KtCore" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="KtCore" type="b2602c69:ProjectViewProjectNode" />
-              <item name="KtCore" type="462c0819:PsiDirectoryNode" />
-              <item name="out" type="462c0819:PsiDirectoryNode" />
-              <item name="production" type="462c0819:PsiDirectoryNode" />
-              <item name="KtCore" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="KtCore" type="b2602c69:ProjectViewProjectNode" />
@@ -204,7 +299,22 @@
               <item name="KtCore" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="ktcore" type="462c0819:PsiDirectoryNode" />
+              <item name="helper" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="KtCore" type="b2602c69:ProjectViewProjectNode" />
+              <item name="KtCore" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="ktcore" type="462c0819:PsiDirectoryNode" />
               <item name="peripheral" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="KtCore" type="b2602c69:ProjectViewProjectNode" />
+              <item name="KtCore" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="ktcore" type="462c0819:PsiDirectoryNode" />
+              <item name="peripheral" type="462c0819:PsiDirectoryNode" />
+              <item name="coord" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="KtCore" type="b2602c69:ProjectViewProjectNode" />
@@ -218,11 +328,12 @@
         </subPane>
       </pane>
       <pane id="AndroidView" />
+      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1537225079308" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1537298611075" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="モジュール" />
     <property name="project.structure.proportion" value="0.0" />
@@ -269,13 +380,20 @@
       <option name="project" value="LOCAL" />
       <updated>1537224793866</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="second">
+      <created>1537225381464</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1537225381464</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="1912" y="-8" width="1936" height="1056" extended-state="7" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.195629" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20415778" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="デザイナー" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -291,7 +409,7 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" visible="true" weight="0.329718" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.329718" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -307,8 +425,10 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
     <MESSAGE value="second" />
     <option name="LAST_COMMIT_MESSAGE" value="second" />
+    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
@@ -395,13 +515,6 @@
     <entry file="file://$PROJECT_DIR$/KtCore.iml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/sorrowblue/ktcore/core/Player.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2924">
-          <caret line="174" column="23" selection-start-line="174" selection-start-column="23" selection-end-line="174" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/sorrowblue/ktcore/peripheral/Entitys.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
@@ -423,20 +536,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/sorrowblue/ktcore/peripheral/Coords.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="29" selection-start-line="29" selection-end-line="29" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/sorrowblue/ktcore/peripheral/Coords.kt" />
     <entry file="file://$PROJECT_DIR$/src/com/sorrowblue/ktcore/core/Entity.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1163">
           <caret line="298" selection-start-line="298" selection-end-line="298" />
-          <folding>
-            <element signature="e#36#135#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -444,9 +548,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
           <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
-          <folding>
-            <element signature="e#42#164#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -462,6 +563,83 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/out/production/KtCore/KtCore.js">
       <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/sorrowblue/ktcore/peripheral/coord/Coords.kt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/sorrowblue/ktcore/peripheral/coord/Relative.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="27" selection-start-line="2" selection-start-column="27" selection-end-line="2" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/sorrowblue/ktcore/peripheral/coord/Vec.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="22" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/sorrowblue/ktcore/helper/Mob.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="1" lean-forward="true" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/sorrowblue/ktcore/core/Player.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="16" column="19" lean-forward="true" selection-start-line="16" selection-start-column="19" selection-end-line="16" selection-end-column="19" />
+          <folding>
+            <element signature="e#36#171#0" expanded="true" />
+            <element signature="n#!!doc;n#get#0;n#!!block;n#Player#0" />
+            <element signature="n#!!doc;n#getNameForEnt#0;n#!!block;n#Player#0" />
+            <element signature="n#!!doc;n#getName#0;n#!!block;n#Player#0" />
+            <element signature="n#!!doc;n#getDimension#0;n#!!block;n#Player#0" />
+            <element signature="n#!!doc;n#isPlayer#0;n#!!block;n#Player#0" />
+            <element signature="n#!!doc;n#getPointed#0;n#!!block;n#Player#0" />
+            <element signature="n#!!doc;n#getInventory#0;n#!!block;n#Player#0" />
+            <element signature="n#!!doc;n#getCarriedItem#0;n#!!block;n#Player#0" />
+            <element signature="n#!!doc;n#setCarriedItem#0;n#!!block;n#Player#0" />
+            <element signature="n#!!doc;n#decreaseCarriedItem#0;n#!!block;n#Player#0" />
+            <element signature="n#!!doc;n#setPosition#0;n#!!block;n#Player#0" />
+            <element signature="n#!!doc;n#getPosition#0;n#!!block;n#Player#0" />
+            <element signature="n#!!doc;n#addPosition#0;n#!!block;n#Player#0" />
+            <element signature="n#!!doc;n#setVelocity#0;n#!!block;n#Player#0" />
+            <element signature="n#!!doc;n#getVelocity#0;n#!!block;n#Player#0" />
+            <element signature="n#!!doc;n#addVelocity#0;n#!!block;n#Player#0" />
+            <element signature="n#!!doc;n#experience#0;n#!!block;n#Player#0" />
+            <element signature="n#!!doc;n#getExperience#0;n#!!block;n#Player#0" />
+            <element signature="n#!!doc;n#setExperience#0;n#!!block;n#Player#0" />
+            <element signature="n#!!doc;n#addExperience#0;n#!!block;n#Player#0" />
+            <element signature="n#!!doc;n#level#0;n#!!block;n#Player#0" />
+            <element signature="n#!!doc;n#getLevel#0;n#!!block;n#Player#0" />
+            <element signature="n#!!doc;n#setLevel#0;n#!!block;n#Player#0" />
+            <element signature="n#!!doc;n#addLevel#0;n#!!block;n#Player#0" />
+            <element signature="n#!!doc;n#flying#0;n#!!block;n#Player#0" />
+            <element signature="n#!!doc;n#getFlyingEnabled#0;n#!!block;n#Player#0" />
+            <element signature="n#!!doc;n#setFlyingEnabled#0;n#!!block;n#Player#0" />
+            <element signature="n#!!doc;n#getFlying#0;n#!!block;n#Player#0" />
+            <element signature="n#!!doc;n#setFlying#0;n#!!block;n#Player#0" />
+            <element signature="n#!!doc;n#exhaustion#0;n#!!block;n#Player#0" />
+            <element signature="n#!!doc;n#getExhaustion#0;n#!!block;n#Player#0" />
+            <element signature="n#!!doc;n#setExhaustion#0;n#!!block;n#Player#0" />
+            <element signature="n#!!doc;n#hunger#0;n#!!block;n#Player#0" />
+            <element signature="n#!!doc;n#getHunger#0;n#!!block;n#Player#0" />
+            <element signature="n#!!doc;n#setHunger#0;n#!!block;n#Player#0" />
+            <element signature="n#!!doc;n#saturation#0;n#!!block;n#Player#0" />
+            <element signature="n#!!doc;n#getSaturation#0;n#!!block;n#Player#0" />
+            <element signature="n#!!doc;n#setSaturation#0;n#!!block;n#Player#0" />
+            <element signature="n#!!doc;n#health#0;n#!!block;n#Player#0" />
+            <element signature="n#!!doc;n#getHealth#0;n#!!block;n#Player#0" />
+            <element signature="n#!!doc;n#setHealth#0;n#!!block;n#Player#0" />
+            <element signature="n#!!doc;n#score#0;n#!!block;n#Player#0" />
+            <element signature="n#!!doc;n#getScore#0;n#!!block;n#Player#0" />
+          </folding>
+        </state>
+      </provider>
     </entry>
   </component>
   <component name="masterDetails">
