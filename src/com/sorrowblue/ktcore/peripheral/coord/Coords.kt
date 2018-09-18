@@ -1,4 +1,4 @@
-packge com.sorrowblue.ktcore.peripheral.coord
+package com.sorrowblue.ktcore.peripheral.coord
 
 interface Coords {
 	val x: Int
